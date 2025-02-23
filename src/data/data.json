@@ -2,35 +2,35 @@
 	"projects": [
 		{
 			"id": 1,
-			"imageUrl": "../../public/Deadly-Cave.png",
+			"imageUrl": "/Deadly-Cave.png",
 			"modalContent": {
 				"title": "Deadly Cave",
 				"description": "Sigue la aventura de Dan, un astronauta varado en un planeta hostil repleto de minas abandonadas y tabernas infestadas de monstruos. Con municiones limitadas y un deseo desesperado de regresar a casa, cada decisión cuenta. ¿Podrás encontrar una salida antes de quedarte sin recursos?",
 				"titleDescription": "Desarrollo:",
 				"additionalText": "Este proyecto 2D fue desarrollado utilizando Unity y basado en los assets de Ansimuz - Super Grotto Escape Pack. Implementé un sistema de colisiones preciso y una movimiento básico para los enemigos, asegurando una experiencia de juego fluida y desafiante. Motor: Unity. Lenguaje: C#. Enfoque: Optimización de físicas, gestión de recursos limitados y diseño de niveles procedural. Retos: Implementación de enemigos con rutas dinámicas y un sistema de disparos con munición escasa. Estado: En desarrollo.",
-				"additionalImage": "../../public/Deadly-Cave.png",
-				"additionalImageOne": "../../public/Deadly-Cave.png",
+				"additionalImage": "/Deadly-Cave.png",
+				"additionalImageOne": "/Deadly-Cave.png",
 				"additionalImageTwo": "https://via.placeholder.com/400x200",
 				"additionalImageThree": "https://via.placeholder.com/400x200"
 			}
 		},
 		{
 			"id": 2,
-			"imageUrl": "../../public/Deadly-Island.png",
+			"imageUrl": "/Deadly-Island.png",
 			"modalContent": {
 				"title": "Deadly Island",
 				"description": "En un combate de sumo futurista, luchadores vibrantes y llenos de energía se enfrentan en una arena caótica donde solo el más fuerte permanecerá en pie. Cada empujon pueden cambiar el curso de la batalla en segundos. ¡Domina la física, controla tu equilibrio y expulsa a tus oponentes antes de que te saquen a ti.",
 				"titleDescription": "Desarrollo:",
 				"additionalText": "Este proyecto 3D comenzó como un ejercicio de la Unidad 4 de Unity Learn, pero lo expandí con elementos visuales más dinámicos y un diseño más pulido. En lugar de los cubos estándar, utilicé Party Monster Duo Polyart PBR para darle más estilo y añadí efectos sonoros de SoundBits Free Sound FX Collection para mejorar la experiencia inmersiva. Motor: Unity. Lenguaje: C#. Enfoque: Física en tiempo real, detección de colisiones y mecánicas de empuje dinámicas. Retos: Ajuste del balance en la jugabilidad y control de fuerzas para un combate justo pero caótico. Estado: En desarrollo.",
-				"additionalImage": "../../public/Deadly-Island.png",
-				"additionalImageOne": "../../public/Deadly-Cave.png",
+				"additionalImage": "/Deadly-Island.png",
+				"additionalImageOne": "/Deadly-Cave.png",
 				"additionalImageTwo": "https://via.placeholder.com/400x200",
 				"additionalImageThree": "https://via.placeholder.com/400x200"
 			}
 		},
 		{
 			"id": 3,
-			"imageUrl": "../../public/Deadly-Cave.png",
+			"imageUrl": "/Deadly-Cave.png",
 			"modalContent": {
 				"title": "Proyecto 3",
 				"description": "Descripción del proyecto 3. ¡Es asombroso!",
@@ -40,8 +40,8 @@
 		}
 	],
 	"images": [
-		"../../public/Deadly-Cave.png",
-		"../../public/Deadly-Cave.png",
-		"../../public/Deadly-Cave.png"
+		"/Deadly-Cave.png",
+		"/Deadly-Cave.png",
+		"/Deadly-Cave.png"
 	]
 }
