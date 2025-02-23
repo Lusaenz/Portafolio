@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: #dddddd;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.header-list {
+  list-style: none;
+  display: flex;
+  gap: 450px;
+  margin: 0;
+}
+
+.header-list li {
+  margin-top: 20px;
+}
+
+.header-list button {
+  background: none;
+  border: none;
+  color: #dddddd;
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-list button:hover {
+  color: #0726bd;
+}

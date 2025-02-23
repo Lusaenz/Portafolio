@@ -1,0 +1,88 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-container {
+  background: #dddddd;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 90%;
+  width: 90%;
+  max-height: 80vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Estilos para el carrusel del modal */
+.modal-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.modal-carousel-content {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.modal-section {
+  flex: 0 0 100%;
+  padding: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.modal-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Botones del carrusel */
+.modal-carousel-button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #c90f0f;
+  transition: color 0.3s ease;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.modal-carousel-button:hover {
+  color: #0726bd;
+}
+
+.modal-carousel-button.prev {
+  left: 10px;
+}
+
+.modal-carousel-button.next {
+  right: 10px;
+}

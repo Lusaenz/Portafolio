@@ -1,0 +1,12 @@
+.image-projects {
+  height: 23vh;
+  width: 300px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container.hovered .image-projects {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(201, 15, 15, 0.5);
+}

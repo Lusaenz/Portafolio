@@ -1,0 +1,48 @@
+.buttons-container {
+    display: flex;
+    gap: 20px; 
+    margin-bottom: 20px;
+    padding-bottom: 60px;
+  }
+  
+  .btn {
+    background: #C90F0F; 
+    color: #DDDDDD;
+    border: none;
+    padding: 15px 30px; 
+    border-radius: 8px;
+    font-size: 1.2em; 
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease; 
+    text-decoration: none; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; 
+  }
+  
+  .btn:hover {
+    background: #A00D0D; 
+  }
+  
+  /* Estilos para los íconos de los botones */
+  .btn i {
+    font-size: 1.5em; 
+    transition: color 0.3s ease; 
+  }
+  
+  .btn:hover i {
+    color: #0726BD; 
+  }
+  
+  /* Estilos Responsive */
+  @media (max-width: 768px) {
+    .buttons-container {
+      flex-direction: column; 
+      width: 100%;
+    }
+  
+    .btn {
+      width: 100%; 
+    }
+  }
