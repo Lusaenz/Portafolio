@@ -1,3 +1,4 @@
+/* Fondo oscuro y centrado */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -11,8 +12,9 @@
   z-index: 1000;
 }
 
+/* Contenedor principal del modal */
 .modal-container {
-  background: #dddddd;
+  background: #06155E;
   padding: 20px;
   border-radius: 8px;
   max-width: 90%;
@@ -20,26 +22,32 @@
   max-height: 80vh;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Botón para cerrar */
 .modal-close-button {
   position: absolute;
   top: 10px;
   right: 10px;
   background: none;
   border: none;
-  font-size: 20px;
+  font-size: 40px;
   cursor: pointer;
+  color:#D9D9D9;
 }
 
-/* Estilos para el carrusel del modal */
+/* Carrusel */
 .modal-carousel {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: relative;
+  justify-content: center;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .modal-carousel-content {
@@ -48,17 +56,67 @@
   transition: transform 0.5s ease;
 }
 
+/* Sección individual del carrusel */
 .modal-section {
   flex: 0 0 100%;
   padding: 20px;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
+  max-height: 80vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.modal-section img {
-  max-width: 100%;
-  border-radius: 8px;
+/* Texto centrado */
+.modal-section h2,
+.modal-section h3 {
+  text-align: center;
   margin-bottom: 10px;
+  color:#D9D9D9 ;
+}
+.modal-section p {
+  text-align: justify;
+  color:#D9D9D9 ;
+}
+
+/* Imagenes dentro del modal */
+.modal-image {
+  padding-right: 10px;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  width: 300px;
+}
+.modal-image-exc {
+  padding-right: 10px;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  width: 700px;
+}
+.modal-image-prTwo {
+  padding-right: 10px;
+  border-radius: 8px;
+  height: 350px;
+  object-fit: cover;
+  width: 500px;
+}
+.modal-image-prTwo-exc {
+  padding-right: 10px;
+  border-radius: 8px;
+  height: 380px;
+  object-fit: cover;
+  width: 700px;
+}
+.modal-image-prThr {
+  padding-right: 10px;
+  border-radius: 8px;
+  height: 300px;
+  object-fit: cover;
+  width: 500px;
 }
 
 /* Botones del carrusel */
@@ -76,7 +134,7 @@
 }
 
 .modal-carousel-button:hover {
-  color: #0726bd;
+  color: #D9D9D9;
 }
 
 .modal-carousel-button.prev {
@@ -85,4 +143,30 @@
 
 .modal-carousel-button.next {
   right: 10px;
+}
+
+/* Scrollbar personalizado solo para la sección del modal */
+.modal-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-section::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 4px;
+}
+
+.modal-section::-webkit-scrollbar-thumb {
+  background-color: #0726BD;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-section::-webkit-scrollbar-thumb:hover {
+  background-color: #c90f0f;
+}
+
+/* Firefox */
+.modal-section {
+  scrollbar-width: thin;
+  scrollbar-color: #c90f0f #1a1a1a;
 }

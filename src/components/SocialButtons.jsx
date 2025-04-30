@@ -29,12 +29,11 @@ const SocialButtons = () => {
         <i className="fi fi-rr-gamepad"></i>
       </a>
       <a
-        href="https://docs.google.com/document/d/1_Zrfblxt6j97NVUpBfZ9L60f5RhloQcV/edit"
-        target="_blank"
-        rel="noopener noreferrer"
+        href="/public/mi-cv.pdf"
+        download="mi-cv.pdf"
         className="btn"
       >
-        <i className="fi fi-rr-file"></i>
+        <i className="fi fi-rr-file-pdf"></i>
       </a>
     </div>
   );

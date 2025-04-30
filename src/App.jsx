@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import VerticalCarousel from "./components/VerticalCarousel";
-import ImageWithModal from "./components/ImageWithModal";
 import SocialButtons from "./components/SocialButtons";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ProjectOne from "./components/ProjectOne";
+import ProjectTwo from "./components/ProjectTwo";
+import ProjectThree from "./components/ProjectThree";
 import data from "./data/data.json";
 import "./index.css";
 
@@ -27,28 +29,9 @@ export function App() {
           }`}
         >
           <div className="projects-grid">
-            {projects.map((project) => (
-              <ImageWithModal
-                key={project.id}
-                imageUrl={project.imageUrl}
-                modalContent={[
-                  <div className="modal-section">
-                    <h2>{project.modalContent.title}</h2>
-                    <p>{project.modalContent.description}</p>
-                  </div>,
-                  <div className="modal-section">
-                    <h3>{project.modalContent.titleDescription}</h3>
-                    <p>{project.modalContent.additionalText}</p>
-                  </div>,
-                  <div className="modal-section">
-                    <img
-                      src={project.modalContent.additionalImage}
-                      alt="Imagen adicional"
-                    />
-                  </div>,
-                ]}
-              />
-            ))}
+            <ProjectOne imageUrl={projects[0].imageUrl} />
+            <ProjectTwo imageUrl={projects[1].imageUrl} />
+            <ProjectThree imageUrl={projects[2].imageUrl} />
           </div>
         </div>
 
@@ -65,12 +48,15 @@ export function App() {
 
           <div className="profile-container">
             <p className="bio">
-              ⚡ ¡Hola! Soy LuSaenz o solo Lu.  <br /> 
-              Apasionada por el desarrollo de
-              videojuegos, me enfoco en crear experiencias interactivas fluidas
-              y divertidas. Trabajo con Unity, C# y JavaScript, explorando
-              mecánicas, físicas, diseño de niveles y optimización en juegos 2D
-              y 3D. Siempre aprendiendo, siempre lista para el próximo desafío.
+              ⚡ ¡Hola! Soy Luisa Sáenz, "solo Lu".<br /> 
+              Apasionada desarrolladora de
+              videojuegos con foco en crear experiencias interactivas fluidas y
+              memorables. Especializada en Unity y C#, he trabajado con:
+              Mecánicas innovadoras y sistemas de física. Diseño de niveles
+              narrativos (2D y 3D). Optimización sin
+              sacrificar la diversión. Adicta a los desafíos técnicos y a
+              aprender algo nuevo en cada proyecto. ¿Siguiente reto? ¡Estoy
+              lista!
             </p>
           </div>
 

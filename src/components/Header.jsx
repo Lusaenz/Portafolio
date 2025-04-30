@@ -16,7 +16,7 @@ const Header = ({ onSectionClick }) => {
             <button onClick={() => onSectionClick("about")}>Quién soy</button>
           </li>
           <li>
-            <button onClick={() => onSectionClick("art")}>Arte 3D</button>
+            <button onClick={() => onSectionClick("art")}>VFX</button>
           </li>
         </ul>
       </nav>

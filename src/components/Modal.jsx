@@ -36,7 +36,7 @@ const Modal = ({ isOpen, onClose, sections = [] }) => {
             </button>
           )}
           <div
-            className="modal-carousel-content"
+            className="modal-carousel-content scrollable-content"
             style={{ transform: `translateX(-${currentSection * 100}%)` }}
           >
             {sections.map((section, index) => (
